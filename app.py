@@ -3,6 +3,7 @@ import pandas as pd
 import plotly.express as px
 
 app = Dash(__name__, suppress_callback_exceptions=True)
+app = app.server
 
 # Load data
 fun = pd.read_csv('FunOlympics.csv')
